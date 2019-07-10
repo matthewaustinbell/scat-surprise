@@ -11,7 +11,7 @@ class SingleScat extends React.Component {
 
   componentDidMount() {
     const scatId = this.props.match.params.id;
-    scatData.getSIngleScat(scatId)
+    scatData.getSingleScat(scatId)
       .then(scatPromise => this.setState({ scat: scatPromise.data }))
       .catch(err => console.error('unable to get single scat', err));
   }
